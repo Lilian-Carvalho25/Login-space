@@ -4,6 +4,9 @@ Este projeto representa telas de login, cadastro e recuperação de senha, com o
 ## ⚙ Funcionalidades 
 - Página linda, responsiva e bem construída. <br> <br>
 
+<img src="https://i.imgur.com/cUaBVna.png" width="600px" />
+<br/>
+
 ## 🖥️ Tecnologias utilizadas:<br>
 ###
 
