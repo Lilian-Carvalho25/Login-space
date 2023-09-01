@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Russo+One&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url(../img/galaxy-background.jpg) center center no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+h1, h2, h3, h4, h5,h6, span {
+    font-family: 'Russo One', sans-serif;
+}
+a {
+    color:  #7567c9;
+}
+.main-login {
+    height: 75vh;
+    width: 34vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 40px;
+    margin-left: 120px;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+span {
+    color: #7567c9;
+}
+.box-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 280px;
+}
+.box-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px 0;
+}
+input, button {
+    width: 100%;
+}
+.input {
+    background-color: #212121;
+    height: 35px;
+    padding: 10px;
+    border: 2px solid #3d3c3c;
+    border-radius: 5px;
+  }
+  
+  .input:focus {
+    color: #fff;
+    outline-color:  #AE7EF2;
+    box-shadow: -3px -3px 12px #AE7EF2;
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+button {
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2E3D59 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: #AE7EF2 ;
+    transition: 0.8s;
+}
+.button-85 {
+    position: relative;
+    z-index: 0;
+  }
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #2E3D59,
+      #034c88,
+      #141A26,
+      #42378C
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius:  0px 4rem 0px 4rem;
+  }
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(13,12,12);
+    background: linear-gradient(135deg, rgba(13,12,12,1) 9%, rgba(24,34,51,1) 26%, rgba(27,36,55,1) 49%, rgba(24,34,51,1) 77%, rgba(13,12,12,1) 97%);
+    border-radius:  0px 4rem 0px 4rem;
+    left: 0;
+    top: 0;
+  }
+  .screen {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transform: rotateY(90deg);
+    transition: transform 0.5s ease-in-out;
+}
+.screen.active {
+    transform: rotateY(0deg);
+}
+
+
+@media screen and (max-width:960px) {
+    .box-form{
+        width: 280px;
+    }
+    .main-login {
+        height: 80vh;
+        width: 38vw;
+    }
+    .logo {
+        width: 38px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .box-form{
+        width: 350px;
+    }
+    .main-login {
+        height: 85vh;
+        width: 60vw;
+    }
+    .logo {
+        width: 42px;
+        margin-left: 152px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .main-login {
+        width: 75vw;
+    }
+    .logo {
+        width: 42px;
+        margin-left: 152px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .box-form{
+        width: 300px;
+    }
+    .main-login {
+        width: 83vw;
+    }
+    .logo {
+        margin-left: 130px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .box-form{
+        width: 250px;
+    }
+    .main-login {
+        width: 83vw;
+    }
+    .logo {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .box-form{
+        width: 200px;
+    }
+    .logo {
+        margin-left: 80px;
+    }
+}
+
